@@ -111,11 +111,20 @@ const products = [
 
 
 const items =document.querySelector('#items-cards')
+const title =document.querySelector('#items-name')
+const price =document.querySelector('#items-price')
+const description =document.querySelector('#items-description')
+const button =document.querySelector('#items-button')
 
 
 for (let i = 0; i < products.length; i++) {
 console.log(products[i]);   
 
+title.innerHTML +=`${products[i].name}`
+
+price.innerHTML +=`${products[i].price}`
+
+description.innerHTML +=`${products[i].description}`
 
 
 }
