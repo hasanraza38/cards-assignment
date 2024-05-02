@@ -110,21 +110,38 @@ const products = [
 
 
 
-const items =document.querySelector('#items-cards')
-const title =document.querySelector('#items-name')
-const price =document.querySelector('#items-price')
-const description =document.querySelector('#items-description')
-const button =document.querySelector('#items-button')
+const items = document.querySelector('#items')
+// const title =document.querySelector('#items-name')
+// const price =document.querySelector('#items-price')
+// const description =document.querySelector('#items-description')
+// const button =document.querySelector('#items-button')
 
 
 for (let i = 0; i < products.length; i++) {
-console.log(products[i]);   
+// console.log(products[i]);   
 
-title.innerHTML +=`${products[i].name}`
+// title.innerHTML +=`${products[i].name}`
 
-price.innerHTML +=`${products[i].price}`
+// price.innerHTML +=`${products[i].price}`
 
-description.innerHTML +=`${products[i].description}`
+// description.innerHTML +=`${products[i].description}`
+
+items.innerHTML +=`
+<div id="" class="card mt-3" style="width: 18rem;">
+        <div id="item2" class="card-body ">
+
+          <h5 id="items-name" class="card-title">${products[i].name}</h5>
+          <h6 id="items-price" class="card-title">${products[i].price}</h6>
+          <p id="items-description" class="card-text">${products[i].description}</p>
+          <a id="items-button" href="#" class="btn btn-primary">PLACE NOW</a>
+        
+          </div>
+        
+      </div>`
+
+
+
+
 
 
 }
